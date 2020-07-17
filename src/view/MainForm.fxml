@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="196.0" layoutY="44.0" text="POS SYSTEM">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnManageCustomer" layoutX="198.0" layoutY="126.0" onAction="#btnManageCustomer_OnAction" text="Manage Customer" />
+      <JFXButton fx:id="btnManageItem" layoutX="207.0" layoutY="175.0" onAction="#btnManageItem_OnAction" text="Manage Item" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="212.0" layoutY="234.0" onAction="#btnPlaceOrder_OnAction" text="Place Order" />
+      <JFXButton fx:id="btnSearchOrder" layoutX="211.0" layoutY="290.0" onAction="#btnSearchOrder_OnAction" text="Search Order" />
+   </children>
+</AnchorPane>
