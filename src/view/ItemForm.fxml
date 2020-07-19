@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="490.0" prefWidth="600.0" style="-fx-background-color: E0E0E0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+    <children>
+        <Button fx:id="btnNavigate" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnNavigate_OnAction" prefHeight="26.0" prefWidth="59.0" text="Back" />
+        <Label layoutX="206.0" layoutY="22.0" prefHeight="36.0" prefWidth="135.0" text="Manage Items" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAddNewItem" layoutX="439.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnAddNewItem_OnAction" prefHeight="36.0" prefWidth="135.0" style="-fx-background-color: #007bff;" text="+Add New Item" />
+        <TextField fx:id="txtItemCode" layoutX="23.0" layoutY="72.0" prefHeight="26.0" prefWidth="546.0" promptText="ItemCode" />
+        <TextField fx:id="txtDescription" layoutX="23.0" layoutY="105.0" prefHeight="26.0" prefWidth="545.0" promptText="Description" />
+        <TextField fx:id="txtQuantityOnHand" layoutX="23.0" layoutY="141.0" prefHeight="26.0" prefWidth="546.0" promptText="Quantity on Hand" />
+        <TextField fx:id="txtUnitPrice" layoutX="23.0" layoutY="175.0" prefHeight="26.0" prefWidth="546.0" promptText="Unit Price" />
+        <Button fx:id="btnSave" layoutX="23.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: orange" text="Save" />
+        <Button fx:id="btnDelete" layoutX="482.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnDelete_OnAction" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: forestgreen" text="Delete" />
+        <TableView fx:id="tblItems" layoutX="23.0" layoutY="258.0" prefHeight="225.0" prefWidth="546.0">
+            <columns>
+                <TableColumn prefWidth="100.20001411437988" text="Item Code" />
+                <TableColumn prefWidth="189.59996795654297" text="Description" />
+                <TableColumn prefWidth="122.0" text="Quantity on Hand" />
+                <TableColumn prefWidth="137.20004272460938" text="Unit Price" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
