@@ -40,10 +40,6 @@ public class CustomerTM {
 
     @Override
     public String toString() {
-        return "CustomerTM{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return this.id;
     }
 }

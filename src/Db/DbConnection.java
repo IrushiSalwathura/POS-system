@@ -10,8 +10,8 @@ public class DbConnection {
 
     private DbConnection(){
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/POS_System","root","");
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/POS_System","root","mysql");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
